@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 960px;
+            /* Fixed total width */
+            height: 960px;
+            /* Fixed total height */
+            border: 1px solid #000;
+
+        }
+
+        .container .grid-item {
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .container .grid-item:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <button id="gridButton">Set Grid Size</button>
+</body>
+<script src="./script.js"></script>
+
+</html>
